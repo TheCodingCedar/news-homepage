@@ -1,0 +1,64 @@
+@media(max-width: 1000px) {
+    * {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        /* display: flex;
+    flex-direction: column; */
+        max-width: 100vw;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+        margin: auto;  
+        justify-content: center;
+
+
+    }
+
+    .grid-template-areas-one {
+        grid-template:
+            'logo'
+            'main1' 300px
+            'main2'
+            'main3'
+            'aside'
+            'footer1'
+            'footer2'
+            'footer3';
+    }
+
+    #itens {
+        display: none;
+    }
+
+    .main1 {
+        background-image: url(images/image-web-3-mobile.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #burguer,
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #burguer {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* menu {
+        display: block;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+
+    } */
+
+}
